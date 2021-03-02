@@ -1,0 +1,788 @@
+/*---------------------------------------------- HTML ---------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:active, a:focus, a:hover {
+    text-decoration: none;
+}
+
+button, button:active, button:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+h1, .h1 {
+    margin: 18px 0;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 3.33333em;
+    line-height: 1.08em;
+    text-align: center;
+    color: #3c332a;
+}
+
+hr, .hr {
+    background: #7ca60a;
+    width: 7px;
+    height: 7px;
+    border: 0;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.body {
+    margin: 0 auto;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*-------------------------------------- COMMON FOR ALL BLOCKS ------------------------------------*/
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.block {
+    padding: 45px 0;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*-------------------------------------- MIN-WIDTH ( 768px ) -------------------------------------*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*-------------------------------------- MIN-WIDTH ( 992px ) -------------------------------------*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*-------------------------------------- MIN-WIDTH ( 1200px ) -------------------------------------*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*------------------------------------------- ID : BLOCK-1 ----------------------------------------*/
+
+#block-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 8px 0 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.66) 0%, white 100%);
+    height: 82px;
+    z-index: 99999;
+}
+
+#block-1 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#block-1 .header__item {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#block-1 .logo__item div:first-child {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 1.86667em;
+    line-height: 1.07143em;
+    color: #2d3d58;
+}
+
+#block-1 .logo__item div {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.06667em;
+    line-height: 1.25em;
+    color: #3a2213;
+}
+
+#block-1 .logo__item img {
+    width: 68px;
+    height: 66px;
+    margin-right: 5px;
+}
+
+#block-1 .site-nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#block-1 nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#block-1 .site-nav__item {
+    padding: 0 10px;
+    line-height: 2;
+}
+
+#block-1 .site-nav__item a {
+    color: #3c332a;
+}
+
+#block-1 .site-nav__item a:hover, .site-nav__item a:active {
+    color: #7ca60a;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*------------------------------------------ ID : BLOCK-2 -----------------------------------------*/
+
+#block-2 {
+    background: #d7dcd5 url("../img/bkg-img/bkg-top.jpg") no-repeat center;
+}
+
+#block-2 .row-col-right {
+    margin: 0 0 0 auto;
+    width: 683px;
+    height: 637px;
+}
+
+#block-2 .presentation {
+    padding: 110px 0 137px;
+    height: 637px;
+}
+
+#block-2 .presentation__title {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1em;
+    color: #2d3d58;
+}
+
+#block-2 .presentation__sub-title {
+    margin: 12px 0 88px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.25em;
+    color: #3c332a;
+}
+
+#block-2 .presentation__txt {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.22222em;
+    color: #e2c897;
+}
+
+#block-2 .presentation__phone {
+    margin: 7px 0 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.06667em;
+    color: #fff;
+}
+
+#block-2 .presentation-btn {
+    padding: 13px 55px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 1.46667em;
+    line-height: 1em;
+    border: 1px solid #7ca60a;
+    border-radius: 4px;
+    background: #74a109;
+    background: linear-gradient(to bottom, #a7c90f 0%, #99bd0d 4%, #74a109 50%, #558a07 100%);
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#block-2 .presentation-btn:hover {
+    background: linear-gradient(to bottom, #558a07 0%, #74a109 50%, #99bd0d 96%, #a7c90f 100%);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*------------------------------------------ ID : BLOCK-3 -----------------------------------------*/
+
+#block-3 .container .sub-h {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.86667em;
+    font-family: "Open Sans", sans-serif;
+    color: #777;
+    text-align: center;
+}
+
+#block-3 .container .row {
+    height: 730px;
+}
+
+#block-3 .container .row > div {
+    height: 390px;
+}
+
+#block-3 .v-col-md-3 {
+    padding: 0 15px;
+    width: 25%;
+    float: left;
+}
+
+#block-3 .case {
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+#block-3 .case__img {
+    margin: 0 auto;
+    width: 263px;
+    height: 175px;
+}
+
+#block-3 .case__title {
+    margin: 12px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.33333em;
+    line-height: 1.1em;
+    color: #2d3d58;
+}
+
+#block-3 .case__txt {
+    color: #777;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-4 ------------------------------------------*/
+
+#block-4 {
+    background: #d7dcd5 url("../img/bkg-img/bkg-about.jpg") no-repeat center;
+}
+
+#block-4 .about__txt {
+    padding: 32px 0 382px 382px;
+}
+
+#block-4 .about__txt p {
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+#block-4 .about__txt p span {
+    font-size: 18px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-5 ------------------------------------------*/
+
+#block-5 .container .sub-h {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.86667em;
+    font-family: "Open Sans", sans-serif;
+    color: #777;
+    text-align: center;
+}
+
+#block-5 .advantages {
+    height: 300px;
+}
+
+#block-5 .advantages__item {
+    padding: 10px 15px;
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-6 ------------------------------------------*/
+
+#block-6 {
+    background: #d7dcd5;
+}
+
+#block-6 .feedback-wrapp {
+    height: 500px;
+}
+
+#block-6 .feedback-wrapp .row {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 20px;
+    height: 450px;
+}
+
+#block-6 .v-col-md-4 {
+    padding: 0 15px;
+    position: relative;
+    width: 33.33333%;
+    float: left;
+}
+
+#block-6 .feedback__img {
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+#block-6 .feedback__img img {
+    z-index: 6;
+    box-shadow: 5px 5px 0 0 #a5b1b5;
+}
+
+#block-6 .feedback__block {
+    margin: 15px 0 0 67px;
+    padding: 20px 30px;
+    background: #fff;
+    height: 386px;
+    z-index: 4;
+    box-shadow: 5px 5px 0 0 #738084;
+}
+
+#block-6 .feedback__name {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.46667em;
+    line-height: 1.27273em;
+    color: #2d3d58;
+}
+
+#block-6 .feedback__txt {
+    margin: 15px 0;
+    color: #777;
+}
+
+#block-6 .feedback-link {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border: 1px #99bd0d;
+}
+
+#block-6 .feedback-link a {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.4em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#arrow {
+    color: white;
+    font-size: 20px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-7 ------------------------------------------*/
+
+#block-7 .container .sub-h {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.86667em;
+    font-family: "Open Sans", sans-serif;
+    color: #777;
+    text-align: center;
+}
+
+#block-7 .discount {
+    display: table;
+    width: 100%;
+    margin: 30px auto;
+}
+
+#block-7 .discount__item:first-child {
+    padding: 0 10px 0 125px;
+}
+
+#block-7 .discount__item {
+    color: #7ca60a;
+    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.discount__vol {
+    display: table-cell;
+    font-weight: 700;
+    font-size: 6.66667em;
+    line-height: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    vertical-align: bottom;
+}
+
+.discount__txt {
+    display: table-cell;
+    font-weight: 700;
+    font-size: 1.6em;
+    line-height: 1em;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    padding-left: 10px;
+    vertical-align: bottom;
+}
+
+#block-7 .row {
+    height: 504px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#block-7 .v-col-md-3 {
+    width: 25%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.price:nth-child(odd) .price__inner {
+    background: #faf3e1;
+}
+
+.price:nth-child(even) .price__inner {
+    background: #edefec;
+}
+
+.price__inner {
+    text-align: center;
+    padding: 20px;
+    height: 504px;
+}
+
+.price__subj {
+    height: 50px;
+    font-weight: 700;
+    font-size: 1.33333em;
+    line-height: 1.3em;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    color: #2d3d58;
+}
+
+.price__vol {
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 3.05556em;
+    font-family: "Open Sans", sans-serif;
+    color: #2d3d58;
+    position: relative;
+    margin: 10px 0;
+}
+
+.price__vol::after {
+    content: attr(data-text);
+    display: block;
+    font-weight: 400;
+    font-size: 0.57143em;
+    line-height: 1.08333em;
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 72px;
+    left: 25px;
+}
+
+.desc-wrapp {
+    height: 160px;
+}
+
+.price__desc:first-child {
+    border-top: 1px solid #e2c897;
+}
+
+.price__desc {
+    line-height: 1.2em;
+    padding: 11px 0;
+    color: #777;
+    border-bottom: 1px solid #e2c897;
+}
+
+.price__button {
+    margin: 35px 0 15px;
+}
+
+.price__button button {
+    display: block;
+    padding: 15px 0 !important;
+    width: 100%;
+    background: linear-gradient(to bottom, #a7c90f 0%, #99bd0d 4%, #74a109 50%, #558a07 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.46667em;
+    line-height: 1em;
+    font-family: "PT Serif", serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid #7ca60a;
+}
+
+.price__button button:hover {
+    background: linear-gradient(to bottom, #558a07 0%, #74a109 50%, #99bd0d 96%, #a7c90f 100%);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-8 ------------------------------------------*/
+
+#block-8 {
+    position: relative;
+}
+
+#block-8 .map {
+    height: 510px;
+    position: relative;
+}
+
+#block-8 iframe {
+    width: 1280px;
+    height: 510px;
+    position: relative;
+    z-index: 10;
+}
+
+#block-8 .contacts-wrapp {
+    position: absolute;
+    top: 30px;
+    left: calc(50% + 130px);
+    z-index: 20;
+}
+
+#block-8 .contacts {
+    padding: 25px 20px;
+    background: #fff;
+    color: #777;
+    position: relative;
+    z-index: 5;
+}
+
+#block-8 .contacts__title {
+    font-weight: 700;
+    font-size: 3.33333em;
+    line-height: 0.5em;
+    font-family: "PT Serif", serif;
+    color: #3c332a;
+}
+
+#block-8 .contacts__sub-title {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+#block-8 .contacts .appointment__txt {
+    color: #3c332a;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.22222em;
+    font-family: "Open Sans", sans-serif;
+    margin: 20px 0;
+}
+
+#block-8 .contacts .appointment__phone {
+    margin: 10px 0;
+}
+
+#block-8 .contacts .appointment__phone a {
+    font-family: "Open Sans", sans-serif;
+    color: #2d3d58;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.13333em;
+    text-decoration: none;
+}
+
+#block-8 button {
+    background: #74a109;
+    background: linear-gradient(to bottom, #a7c90f 0%, #99bd0d 4%, #74a109 50%, #558a07 100%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.46667em;
+    line-height: 1em;
+    font-family: "PT Serif", serif;
+    text-transform: uppercase;
+    padding: 13px 55px;
+    border-radius: 4px;
+    border: 1px solid #7ca60a;
+}
+
+#block-8 button:hover {
+    background: linear-gradient(to bottom, #558a07 0%, #74a109 50%, #99bd0d 96%, #a7c90f 100%);
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-9 ------------------------------------------*/
+
+#block-9 {
+    background: #e2c897;
+    padding: 20px 0;
+    height: 84px;
+}
+
+#block-9 .container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#block-9 .v-col-md-4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+#block-9 .copyright, #block-9 .info-dew {
+    color: #faf3e1;
+    font-weight: 400;
+    font-size: 1.06667em;
+    line-height: 2.75em;
+    font-family: "Open Sans", sans-serif;
+}
+
+#block-9 .v-col-md-3 {
+    width: 25%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+#block-9 .soc {
+    text-align: center;
+}
+
+#block-9 .soc-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px;
+    transition: 0.2s;
+    width: 168px;
+    height: 44px;
+}
+
+#block-9 .soc__item {
+    width: 36px;
+    height: 36px;
+}
+
+#block-9 i {
+    font-size: 30px;
+}
+
+#block-9 i:hover {
+    background-color: #e2c897;
+    color: white;
+}
+
+#vk {
+   color: dodgerblue;
+}
+
+#youtube {
+    color: red;
+}
+
+#insta {
+    color: palevioletred;
+}
+
+#fb {
+    color: dodgerblue;
+}
+
+#block-9 .v-col-md-5 {
+    width: 41.66667%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+
+/*
+
+#block-9 .v-col-xs-12 {
+    width: 100%;
+}
+
+@media (min-width: 768px)
+#block-9 .v-col-sm-8 {
+    width: 66.66667%;
+}
+
+@media (min-width: 992px)
+#block-9 .v-col-sm-4 {
+    width: 33.33333%;
+}
+
+@media (min-width: 768px)
+.container {
+    width: 750px;
+}
+
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+
+@media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+
+*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*----------------------------------------- ID : BLOCK-10 ------------------------------------------*/
+
+/*
+
+.col-md-1 {
+    width: 8.33333%;
+}
+
+.col-md-4 {
+    width: 33,33333%;
+}
+
+.col-md-6 {
+    width: 50%;
+}
+
+.col-md-8 {
+    width: 66,66667%;
+}
+
+*/
