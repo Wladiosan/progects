@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1px;
+}
+
+a, a:hover, a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header, .logo, .logo-btn, .first-text, .second-text, .content, .sushi,
+.sushi-description, .content__goods, .goods-sushi, .slider-content, .circles, .slider-handler,
+#prevButton, #nextButton, .rights {
+    display: flex;
+}
+
+.first-text, .second-text, .content, .goods-sushi, .sushi, .sushi-description, .slider-content {
+    flex-direction: column;
+}
+
+.header, .logo, .logo-btn, .circles, .slider-handler {
+    flex-direction: row;
+}
+
+.header, .logo, .logo-btn, .first-text, .second-text, .content__goods, .sushi, .sushi-description,
+.slider-content, #prevButton, #nextButton, .circles, .rights {
+    align-items: center;
+}
+
+.logo img, .sushi-img img, .set-img img, .slider-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* -------------------------------------------- BLOCK-1 ------------------------------------------ */
+#block-1 {
+    padding: 5px;
+    background-color: #0072BB;
+}
+
+.header {
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo-img {
+    width: 60px;
+    padding-right: 10px;
+}
+
+.logo-btn {
+    background-color: #F16623;
+    width: 110px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* -------------------------------------------- BLOCK-2 ------------------------------------------ */
+.first-text, .second-text {
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.first-text {
+    color: #000;
+    font-size: 14px;
+}
+
+.second-text {
+    color: #6F6F6F;
+    font-size: 12px;
+}
+
+.content__text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content__goods {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.sushi {
+    margin: 5px 0;
+    padding: 10px 5px;
+    border: 1px #D7D7D7 solid;
+    border-radius: 5px;
+}
+
+.sushi-name {
+    margin: 5px;
+    font-size: 20px;
+    color: #875255;
+    font-weight: 700;
+}
+
+.sushi-description {
+    color: #6F6F6F;
+    font-size: 15px;
+}
+
+.sushi-btn {
+    margin: 20px 0;
+}
+
+.sushi-btn a {
+    color: #6F6F6F;
+}
+
+.sushi-btn.green a {
+    color: green;
+}
+
+.sets {
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.sets div.set-name:first-child {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.set-name {
+    font-size: 17px;
+    text-align: right;
+    padding-right: 70px;
+    margin-top: -10px;
+}
+
+.set-description {
+    margin: 5px 0 5px 30px;
+    font-size: 80%;
+    color: darkred;
+}
+
+/* -------------------------------------------- BLOCK-3 ------------------------------------------ */
+
+#block-3 {
+    background-color: #6DCFF6;
+}
+
+.slider-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 50px 0;
+    text-shadow: 1px 1px black, 2px 2px 10px black;
+}
+
+.slider-image {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.slider-handler {
+    margin: 20px 0;
+}
+
+.slider-handler a.disabled {
+    pointer-events: none;
+}
+
+.circles div {
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.circles div.white {
+    background-color: white;
+}
+.circles div.grey {
+    background-color:grey;
+}
+
+#prevButton, #nextButton {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 0;
+}
+
+#prevButton:active, #nextButton:active {
+    text-decoration: none;
+    border: 0;
+}
+
+#prevButton i, #nextButton i {
+    color: #fff;
+    font-size: 30px;
+}
+
+/* ---------------------------------------------- BLOCK-4 ------------------------------------------ */
+.rights {
+    margin: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+    /* ALL BLOCK */
+    .container {
+        min-width: 320px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .content__goods {
+        flex-direction: column;
+    }
+
+    .logo-btn, .first-text, .second-text, .slider-content, #prevButton, #nextButton, .circles, .rights {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .logo-btn, .first-text, .second-text, .slider-content, #prevButton, #nextButton, .circles,
+    .rights {
+        justify-content: center;
+    }
+
+    .goods-sushi {
+        flex-direction: row;
+    }
+
+    /* -------------------------------------------- BLOCK-1 ------------------------------------------ */
+    .header {
+        padding: 5px 100px 0;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .logo-btn {
+        width: 150px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* -------------------------------------------- BLOCK-2 ------------------------------------------ */
+    .first-text, .second-text {
+        margin: 50px 0;
+    }
+
+    .first-text {
+        font-size: 35px;
+    }
+
+    .second-text {
+        font-size: 20px;
+    }
+
+    .content__text {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .content__goods {
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .sushi {
+        margin: 0 5px;
+        width: 240px;
+    }
+
+    .sushi-img {
+        width: 228px;
+    }
+
+    .sets {
+        width: 380px;
+    }
+
+    .set-description {
+        font-size: 18px;
+    }
+
+    /* -------------------------------------------- BLOCK-3 ------------------------------------------ */
+    .slider-text {
+        font-size: 30px;
+    }
+
+    .slider-image {
+        width: 600px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .content__goods {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
