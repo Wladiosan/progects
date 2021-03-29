@@ -1,0 +1,26 @@
+.header {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-img {
+    margin-right: 5px;
+}
+
+.header__right-text {
+    display: none;
+}
+
+.header__right-link a {
+    font-weight: 700;
+    color: #2A74DB;
+}
