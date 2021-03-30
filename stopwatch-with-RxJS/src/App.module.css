@@ -1,0 +1,29 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 276px;
+    border: 2px solid #cccccc;
+    text-align: center;
+}
+
+.blockTimer {
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    max-width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBlock {
+    margin: 10px auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    height: 30px;
+}
