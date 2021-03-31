@@ -59,8 +59,16 @@ module.exports = {
             template: "./templates/base-for-sign.njk"
         }),
         new HTMLWebpackPlugin({
+            filename: "base-for-app.html",
+            template: "./templates/base-for-app.njk"
+        }),
+        new HTMLWebpackPlugin({
             filename: "header-for-sign.html",
             template: "./templates/header-for-sign.njk"
+        }),
+        new HTMLWebpackPlugin({
+            filename: "header-for-app.html",
+            template: "./templates/header-for-app.njk"
         }),
         new HTMLWebpackPlugin({
             filename: "sign-in-one.html",
@@ -97,6 +105,14 @@ module.exports = {
         new HTMLWebpackPlugin({
             filename: "sign-up-five.html",
             template: "./templates/sign-up-five.njk"
+        }),
+        new HTMLWebpackPlugin({
+            filename: "admin.html",
+            template: "./templates/admin.njk"
+        }),
+        new HTMLWebpackPlugin({
+            filename: "profile-one.html",
+            template: "./templates/profile-one.njk"
         }),
         new MiniCssExtractPlugin({
             filename: filename('css')

@@ -1,33 +1,57 @@
-@import "./main"
-
 .header
-  padding: 15px
-  display: flex
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
+  &.header-for-app
+    display: flex
+    flex-direction: row
+    padding: 0 80px
+    justify-content: space-between
+    height: 60px
+    align-items: center
+    background: #FFFFFF
+    border-bottom: 1px solid #DAE4F2
+
   &__left
     display: flex
     flex-direction: row
-    align-items: center
+
   &__right
-    @media screen and (min-width: $xl)
     display: flex
     flex-direction: row
-    font-family: 'Roboto', sans-serif
-    &-text
-      display: none
-      @media screen and (min-width: $xl)
-        display: flex
-        margin-right: 5px
-        font-size: 16px
-        font-weight: 300
-        line-height: 18px
-        font-style: normal
-        color: #222428
-    &-link a
-      font-weight: 700
-      color: #2A74DB
 
-.logo-img
-  margin-right: 5px
+  &__left
+    & div
+      margin: 0 5px
+
+    &-text
+      font-family: Roboto, sans-serif
+      font-weight: 400
+      font-style: normal
+      font-size: 13px
+      line-height: 15px
+
+      & a
+        color: #252F48
+
+    &-arrow
+      color: #0AD69C
+      font-size: 13px
+
+      & a
+        color: #252F48
+
+  &__right
+    & div
+      margin: 0 5px
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+
+    &-text
+      font-family: Roboto, sans-serif
+      font-weight: 400
+      font-style: normal
+      font-size: 14px
+      line-height: 15px
+
+    &-arrow
+      font-size: 14px
