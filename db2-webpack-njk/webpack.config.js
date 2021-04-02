@@ -110,10 +110,6 @@ module.exports = {
             filename: "admin.html",
             template: "./templates/admin.njk"
         }),
-        new HTMLWebpackPlugin({
-            filename: "profile-one.html",
-            template: "./templates/profile-one.njk"
-        }),
         new MiniCssExtractPlugin({
             filename: filename('css')
         }),
