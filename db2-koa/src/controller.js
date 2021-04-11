@@ -86,6 +86,12 @@ async function signUpFive(ctx) {
     })
 }
 
+async function admin(ctx) {
+    await ctx.render('admin', {
+        title: 'myFixer.com',
+    })
+}
+
 module.exports = {
     home,
     signInOne,
@@ -96,5 +102,6 @@ module.exports = {
     signUpTwo,
     signUpThree,
     signUpFour,
-    signUpFive
+    signUpFive,
+    admin
 }

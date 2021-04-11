@@ -13,6 +13,7 @@ router.get('sign-up-two', controller.signUpTwo)
 router.get('sign-up-three', controller.signUpThree)
 router.get('sign-up-four', controller.signUpFour)
 router.get('sign-up-five', controller.signUpFive)
+router.get('admin', controller.admin)
 
 module.exports = {
     router
