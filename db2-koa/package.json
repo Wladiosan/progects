@@ -1,0 +1,23 @@
+{
+  "name": "db2-koa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "serve": "nodemon app.js",
+    "scss-index": "node-sass src/sass/index.sass src/public/css/index.css",
+    "scss-sign-in": "node-sass src/sass/sign-in.sass src/public/css/sign-in.css",
+    "scss-sign-up": "node-sass src/sass/sign-up.sass src/public/css/sign-up.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^7.0.1",
+    "node-sass": "^5.0.0",
+    "nunjucks": "^3.2.3"
+  }
+}

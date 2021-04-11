@@ -4,8 +4,15 @@ const router = new Router()
 const controller = require('./controller')
 
 router.get('/', controller.home)
-router.get('profile', controller.profile)
-
+router.get('sign-in-one', controller.signInOne)
+router.get('sign-in-two', controller.signInTwo)
+router.get('sign-in-three', controller.signInThree)
+router.get('sign-in-four', controller.signInFour)
+router.get('sign-up-one', controller.signUpOne)
+router.get('sign-up-two', controller.signUpTwo)
+router.get('sign-up-three', controller.signUpThree)
+router.get('sign-up-four', controller.signUpFour)
+router.get('sign-up-five', controller.signUpFive)
 
 module.exports = {
     router

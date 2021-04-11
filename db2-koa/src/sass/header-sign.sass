@@ -1,4 +1,4 @@
-@import "./main"
+@import "media-size"
 
 .header
   &.header-for-sign
@@ -13,9 +13,9 @@
     align-items: center
   &__right
     @media screen and (min-width: $xl)
-    display: flex
-    flex-direction: row
-    font-family: 'Roboto', sans-serif
+      display: flex
+      flex-direction: row
+      font-family: 'Roboto', sans-serif
     &-text
       display: none
       @media screen and (min-width: $xl)
