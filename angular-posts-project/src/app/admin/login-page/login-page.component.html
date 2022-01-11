@@ -1,1 +1,27 @@
-<p>login-page works!</p>
+<form class="card" [formGroup]="form" (ngSubmit)="submit()">
+  <h2>Login to admin panel</h2>
+
+  <div class="form-control" [ngClass]="{invalid: getEmail().touched && getEmail().invalid}">
+    <label for="email">Email: </label>
+    <input id="email" type="email" formControlName="email">
+    <div *ngIf="getEmail().touched && getEmail().invalid" class="validation">
+      <small *ngIf="getEmailError()['email']">Enter correct email</small>
+      <small *ngIf="getEmailError()['required']">Email field can not be empty</small>
+    </div>
+  </div>
+
+  <div class="form-control" [ngClass]="{invalid: getPassword().touched && getPassword().invalid}">
+    <label for="password">Password: </label>
+    <input id="password" type="password" formControlName="password">
+    <div *ngIf="getPassword().touched && getPassword().invalid" class="validation">
+      <small *ngIf="getPasswordError()['required']">Password field cannot be empty</small>
+      <small *ngIf="getPasswordError()['minlength']">
+        Password must contain at least {{ getPasswordError()['minlength'].requiredLength }} characters.
+        Now {{ getPasswordError()['minlength'].actualLength }}
+      </small>
+    </div>
+  </div>
+
+  <button type="submit" class="btn bg-primary" [disabled]="form.invalid">Enter</button>
+
+</form>
